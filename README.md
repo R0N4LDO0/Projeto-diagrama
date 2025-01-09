@@ -49,7 +49,7 @@ A arquitetura atual da Fast Engineering não está acompanhando o aumento de ace
 
 A arquitetura da nova solução busca resolver os desafios atuais da Fast Engineering, oferecendo alta disponibilidade e escalabilidade através de serviços AWS. Essa solução garantirá o acompanhamento de crescimento contínuo do eCommerce, seguindo as melhores práticas DevOps.
 
-![arq](https://github.com/user-attachments/assets/069cf3d0-48e7-4941-a4e1-ad90ed7662a2) 
+![ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/20c570af-44bc-4734-be27-01da2047c6db)
 
   *Arquitetura nova* 
   ## 
@@ -62,7 +62,7 @@ A arquitetura da nova solução busca resolver os desafios atuais da Fast Engine
 * Otimização de Custos
 * Sustentabilidade
 
-   ![aws sh](https://github.com/user-attachments/assets/5ac62246-5308-41f5-943a-d3c986d62eec)
+  
 
    *Pilares da AWS Well-Architected Framework*
   # 🧰 Serviços e Recursos Usados na Arquitetura
