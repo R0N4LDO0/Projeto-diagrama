@@ -49,10 +49,45 @@ A arquitetura atual da Fast Engineering não está acompanhando o aumento de ace
 
 A arquitetura da nova solução busca resolver os desafios atuais da Fast Engineering, oferecendo alta disponibilidade e escalabilidade através de serviços AWS. Essa solução garantirá o acompanhamento de crescimento contínuo do eCommerce, seguindo as melhores práticas DevOps.
 
-![ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/20c570af-44bc-4734-be27-01da2047c6db)
+![Gravar_2025_01_14_18_14_05_353](https://github.com/user-attachments/assets/d5455651-1175-47ba-a59b-907fc57acae4)
 
   *Arquitetura nova* 
   ## 
+# 🔧 Implementação
+#### Integração Contínua e Implantação Contínua (CI/CD)
+
+  Na fase de implementação da arquitetura na AWS, utilizaremos uma abordagem de Integração Contínua e Implantação Contínua (CI/CD) para otimizar o desenvolvimento e a entrega. 
+
+  Isso é essencial para a adoção das práticas DevOps, que visam a colaboração e a automação entre equipes de desenvolvimento e operações.
+
+  Nessa abordagem, integramos os seguintes serviços da AWS, que desempenham papéis fundamentais em automatizar o ciclo de vida de desenvolvimento, construção e implantação de aplicações:
+
+  + AWS CodeCommit
+  + AWS CodeBuild
+  + AWS CodeDeploy
+  + AWS CodePipeline
+
+  **AWS CodeCommit**: É um serviço de hospedagem de repositórios de controle de versão privados. Ele fornece um ambiente seguro e escalável para armazenar e gerenciar código-fonte. Com recursos de controle de acesso baseados em IAM, permite colaborações de maneira eficiente, controle de versões e rastreio de alterações ao longo do tempo.
+
+  **AWS CodeBuild**: É um serviço de compilação gerenciada que automatiza a construção, teste e geração de artefatos de código-fonte. Ele oferece ambientes de compilação sob demanda e escaláveis, permitindo criação e testes do código em paralelo. Tem suporte a vários ambientes de execução, podendo criar e empacotar aplicações para várias plataformas e arquiteturas.
+
+  **AWS CodeDeploy**: Serviço que automatiza a implantação de aplicativos em ambientes de teste e produção de forma consistente e controlada. Ele suporta implantações em instâncias EC2, serviços ECS e até mesmo ambientes on-premises. Com a automação de implantação, permite reduzir erros manuais e garante uma implantação uniforme em ambientes diferentes.
+
+  **AWS CodePipeline**: É um serviço de automação de CI/CD que cria fluxos automatizados para desenvolver, testar, implantar e entregar aplicações. Ele reage automaticamente a mudanças de código no repositório CodeCommit, permitindo entregas frequentes e confiáveis. Isso otimiza o processo de desenvolvimento e implantação.
+
+#### Migração do Banco de Dados
+
+Para fazer uma boa migração do banco de dados MySQL para o AWS RDS, usaremos o AWS Database Migration Service (DMS) para garantir uma transição suave e eficiente. 
+
+O DMS nos permite replicar os dados para a AWS de maneira contínua, garantindo a integridade e a consistência dos dados. 
+
+Com essa abordagem, podemos realizar a migração com o mínimo de impacto para as operações e, ao mesmo tempo, colher os benefícios da escalabilidade, confiabilidade e segurança que a nuvem AWS oferece.
+
+
+
+
+
+  
   A nova solução de arquitetura também possui alinhamento com os pilares da AWS Well-Architected Framework:
 
 * Excelência Operacional
@@ -63,8 +98,10 @@ A arquitetura da nova solução busca resolver os desafios atuais da Fast Engine
 * Sustentabilidade
 
   
+![aws sh](https://github.com/user-attachments/assets/cf07e45d-5f83-42dd-b208-2e97be270be7)
 
-   *Pilares da AWS Well-Architected Framework*
+*Pilares da AWS Well-Architected Framework*
+ 
   # 🧰 Serviços e Recursos Usados na Arquitetura
 
   * Amazon CloudFront**: 
@@ -101,11 +138,6 @@ A arquitetura da nova solução busca resolver os desafios atuais da Fast Engine
   A Virtual Private Cloud isolará a infraestrutura na nuvem e fornecerá controle granular sobre a rede, com a criação de uma rede privada virtual, melhorará a segurança e o isolamento.
     *Desafio*: Isolamento e segurança de rede.
     *Solução*: Criação de uma rede VPC, trazendo controle de tráfego e segurança aprimorados.
-
-  * NACL**:
-  A Network Access Control List é uma lista com camadas adicionais de segurança que controlam o tráfego de entrada e saída de sub-redes em sua VPC.
-    *Desafio*: Isolamento e segurança de rede. 
-    *Solução*: Uso das NACLs para definir regras de tráfego, reforçando a segurança e o controle da comunicação entre componentes da aplicação.
 
   * Amazon RDS**:
   O Relational Database Service será usado para hospedar o banco de dados MySQL, garantindo alta disponibilidade, escalabilidade e backup automático dos dados.
