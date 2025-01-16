@@ -49,6 +49,15 @@ promover a modificação para a nova estrutura em Kubernetes.
 
 Nesta primeira fase, a meta é migrar rapidamente os servidores on-premises para a AWS, sem modificar a arquitetura ou refatorar código. No diagrama abaixo, ilustramos o fluxo de migração: o AWS Replication Agent envia os dados on-premises para uma VPC Temporária (Staging), enquanto o AWS MGN converte as VMs em instâncias EC2. Paralelamente, o AWS DMS cuida da migração do banco de dados para Amazon RDS, garantindo integridade de dados.
 
+# _Diagrama “Lift-and-Shift"_ 
+
+![Diagrama-1](https://github.com/user-attachments/assets/32f16ab1-09f4-4b03-a856-4d7c05d4727b)
+
+
+
+
+
+
 # _Abordagem Geral_
 
  * AWS MGN (Application Migration Service): Replica os servidores (frontend, backend) para instâncias EC2 na AWS (Lift-and-Shift).
